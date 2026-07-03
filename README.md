@@ -23,8 +23,10 @@ to the people who fund them.
 An MCP-native brain a herd of coding agents — different models, different harnesses,
 different machines — coordinate, remember, and re-plan through. Transactional
 coordination (SQLite), analytical memory (DuckDB), bwrap-jailed execution, OIDC
-identity, verification gates, and a fully attributed audit trail. Watch it live:
-`make demo-mission`.
+identity, verification gates, and a fully attributed audit trail. It absorbed my
+earlier agentic write-governance platform: five-gate validated writes, dry-run by
+default with before/after diffs, immutable per-call audit, and the multi-agent
+file-claim broker that grew into the corral itself. Watch it live: `make demo-mission`.
 
 **Media Library** — *AI-native, multi-tenant media platform*
 Full media management (Cloudflare-Worker CDN with on-the-fly resize/AVIF, async video
@@ -32,12 +34,6 @@ pipelines) plus an AI layer: multi-provider generation behind one adapter, an
 MCP/agent research-and-synthesis hub, semantic search. Quarantine-first safety
 through five layers (Safe Browsing → ClamAV → NSFW ML → CSAM hashing → lifecycle
 expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
-
-**Agentic Write-Governance Platform (MCP)** — *AI agents safely operating a production database*
-An MCP server embedded in a Django ASGI app: ~60 ORM-backed tools behind five-gate
-write validation, dry-run-by-default with before/after diffs, atomic opt-in commits,
-and an immutable audit trail — plus a multi-agent file-claim broker so several coding
-agents work one repo without collisions.
 
 **Domain Rules Engine + Governed LLM Decisioning**
 A from-scratch Python port of a complex rules engine, validated to **100% parity
