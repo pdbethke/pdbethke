@@ -47,12 +47,15 @@ through five layers (Safe Browsing → ClamAV → NSFW ML → CSAM hashing → l
 expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
 
 **Kirby** — *a virtual-tabletop platform for the HERO System* (private, in development)
-A constellation of FastAPI services around Foundry VTT: campaign generation, a
-combat assistant where **an LLM selects tactical intent but a deterministic
-engine and seeded, auditable RNG resolve every outcome** (the model never invents
-numbers), AI text/image generation routed through the media platform's engine,
-and its own identity provider (self-hosted Authentik). Same governance thesis as
-everything above — AI proposes, a deterministic layer decides — applied to games.
+A constellation of FastAPI services around Foundry VTT: campaign generation,
+procedural terrain and battle-map generation, a combat assistant where **an LLM
+selects tactical intent but a deterministic engine and seeded, auditable RNG
+resolve every outcome** (the model never invents numbers), AI text/image
+generation routed through the media platform's engine, and its own identity
+provider (self-hosted Authentik). Same governance thesis as everything above —
+AI proposes, a deterministic layer decides — applied to games. The trajectory:
+what began as services around Foundry is growing toward a full virtual-tabletop
+platform in its own right.
 
 **HERO System rules engine** — *a licensed tabletop rules engine, proven to parity*
 A licensed, from-scratch Python implementation of the HERO System 6E
