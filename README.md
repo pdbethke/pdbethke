@@ -55,8 +55,31 @@ RAG answers "what's the actual rule," with citations.
   *2022–2024.* Multi-region integration architecture for the enterprise R-One
   platform; enterprise-scale AWS applications; software lead in cross-functional Agile teams.
 
-> *“…the first and only person we would call.”* — Co-founder, Cella, Inc.
-> (client from under \$10M through \$100M+ revenue)
+## What clients say
+
+> “Peter and I have been working together for many years, from when my company had
+> a revenue stream of less than \$10 million. Needless to say, we couldn't afford
+> an IT department, much less a full-time programmer or consultant. I don't
+> remember how we met, but he was a godsend. Peter, with his innate intelligence
+> and deep knowledge of technology, was able to clearly understand our business
+> needs, translate them into the technological equivalent and deliver the results
+> that allowed us to grow to over \$100 million in revenue. We eventually formed
+> an IT department, but whenever we had business challenges that (we suspected)
+> had a technological solution, he was the first and only person we would call.
+> To summarize: highly intelligent, speaks tech to the tech people and translates
+> to the business people, able to understand business processes and convert them
+> to tech solutions, very hands-on and always answers a call — all great traits
+> we've appreciated in our business relationship.”
+>
+> — **Rossi Bonugli**, co-founder, Cella, Inc. (now part of Randstad US Technologies Group)
+
+> “I had the pleasure of working with Peter over the course of many years on
+> several high-impact projects. Peter is extremely professional, collaborative
+> and a partner in the truest sense of the word. Peter cared very much about the
+> success of our business. I highly recommend Peter and wouldn't hesitate to work
+> with him again in the future.”
+>
+> — **Conor Smith**, former co-CEO, Cella, Inc. (now part of Randstad US Technologies Group)
 
 ## Education & affiliations
 
