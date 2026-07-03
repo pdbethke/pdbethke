@@ -46,6 +46,11 @@ MCP/agent research-and-synthesis hub, semantic search. Quarantine-first safety
 through five layers (Safe Browsing → ClamAV → NSFW ML → CSAM hashing → lifecycle
 expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
 
+### Side projects
+
+Games are my proving ground — the same engineering discipline, pointed at the
+tabletop, and a testbed for techniques that feed back into the serious work.
+
 **Kirby** — *a virtual-tabletop platform for the HERO System* (private, in development)
 A constellation of FastAPI services around Foundry VTT: campaign generation,
 procedural terrain and battle-map generation, a combat assistant where **an LLM
