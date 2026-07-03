@@ -28,6 +28,17 @@ earlier agentic write-governance platform: five-gate validated writes, dry-run b
 default with before/after diffs, immutable per-call audit, and the multi-agent
 file-claim broker that grew into the corral itself. Watch it live: `make demo-mission`.
 
+**ProductBinder / WebOffice** — *multi-tenant publishing SaaS* (private, commercial)
+The complete platform a regional media & publishing business runs on: product and
+listing management, a CMS with inline page and navigation editing, an events
+subsystem with full RFC 5545 recurrence, and a commerce layer — rate cards,
+campaigns, invoicing, accounting sync. A Django/DRF core behind a versioned
+TypeScript SDK (with Svelte components) consumed by a SvelteKit admin and SSR
+public sites; per-tenant branded SSO on self-hosted OIDC (Authentik); semantic +
+vector search; and an agent-governed MCP write surface over the whole schema.
+15+ coordinated repos with a cascading CI/CD pipeline onto self-hosted
+infrastructure. The Media Library below is its media + AI engine.
+
 **Media Library** — *AI-native, multi-tenant media platform*
 Full media management (Cloudflare-Worker CDN with on-the-fly resize/AVIF, async video
 pipelines) plus an AI layer: multi-provider generation behind one adapter, an
