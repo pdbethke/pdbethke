@@ -28,7 +28,7 @@ earlier agentic write-governance platform: five-gate validated writes, dry-run b
 default with before/after diffs, immutable per-call audit, and the multi-agent
 file-claim broker that grew into the corral itself. Watch it live: `make demo-mission`.
 
-**ProductBinder / WebOffice** — *multi-tenant publishing SaaS* (private, commercial)
+**Multi-Tenant Publishing Platform** — *the SaaS a media business runs on* (private, commercial)
 The complete platform a regional media & publishing business runs on: product and
 listing management, a CMS with inline page and navigation editing, an events
 subsystem with full RFC 5545 recurrence, and a commerce layer — rate cards,
