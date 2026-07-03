@@ -54,12 +54,14 @@ numbers), AI text/image generation routed through the media platform's engine,
 and its own identity provider (self-hosted Authentik). Same governance thesis as
 everything above — AI proposes, a deterministic layer decides — applied to games.
 
-**Hero Designer port** — *a tabletop rules engine, proven to parity*
-A from-scratch Python port of the HERO System 6E character-cost engine, validated
-to **100% parity with the Java reference across 28,593 calculations** (1,000+
-unit tests, 650+ fixtures), with a FastAPI + SvelteKit interface and rulebook RAG
-that answers "what's the actual rule" with page-level citations. Kirby's costing
-core.
+**HERO System rules engine** — *a licensed tabletop rules engine, proven to parity*
+A licensed, from-scratch Python implementation of the HERO System 6E
+character-cost rules, built solely as **Kirby's internal costing core — it mirrors
+the system faithfully and is not a competitor to Hero Designer**. Hero Designer is
+the reference implementation it honors: validated to **100% parity across 28,593
+calculations** (1,000+ unit tests, 650+ fixtures) precisely so the VTT resolves
+costs exactly as the official tool does. FastAPI + SvelteKit interface; rulebook
+RAG answers "what's the actual rule" with page-level citations.
 
 *Apart from corralai, these are private projects — inquiries are welcome.*
 
