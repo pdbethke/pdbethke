@@ -53,7 +53,7 @@ RAG answers "what's the actual rule," with citations.
   focused on AI-agent-operable platforms.
 - **Integration Architect / Lead Software Application Developer**, Randstad USA —
   *2022–2024.* Multi-region integration architecture for the enterprise R-One
-  platform; enterprise-scale AWS applications; software lead in large Agile teams.
+  platform; enterprise-scale AWS applications; software lead in cross-functional Agile teams.
 
 > *“…the first and only person we would call.”* — Co-founder, Cella, Inc.
 > (client from under \$10M through \$100M+ revenue)
