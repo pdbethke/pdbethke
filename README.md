@@ -61,9 +61,7 @@ unit tests, 650+ fixtures), with a FastAPI + SvelteKit interface and rulebook RA
 that answers "what's the actual rule" with page-level citations. Kirby's costing
 core.
 
-*Apart from corralai, the projects above are private/commercial — but inquiries
-are welcome: demos, architecture walkthroughs, and licensing conversations are all
-on the table. Reach me via the contact links below.*
+*Apart from corralai, the projects above are private/commercial — inquiries welcome.*
 
 ## Experience
 
