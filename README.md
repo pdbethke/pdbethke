@@ -46,11 +46,20 @@ MCP/agent research-and-synthesis hub, semantic search. Quarantine-first safety
 through five layers (Safe Browsing → ClamAV → NSFW ML → CSAM hashing → lifecycle
 expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
 
-**Domain Rules Engine + Governed LLM Decisioning**
-A from-scratch Python port of a complex rules engine, validated to **100% parity
-across 28,593 test cases**. An LLM selects tactical intent; a seeded RNG and the
-deterministic engine resolve outcomes — the model never invents numbers. Rulebook
-RAG answers "what's the actual rule," with citations.
+**Kirby** — *a virtual-tabletop platform for the HERO System* (private, in development)
+A constellation of FastAPI services around Foundry VTT: campaign generation, a
+combat assistant where **an LLM selects tactical intent but a deterministic
+engine and seeded, auditable RNG resolve every outcome** (the model never invents
+numbers), AI text/image generation routed through the media platform's engine,
+and its own identity provider (self-hosted Authentik). Same governance thesis as
+everything above — AI proposes, a deterministic layer decides — applied to games.
+
+**Hero Designer port** — *a tabletop rules engine, proven to parity*
+A from-scratch Python port of the HERO System 6E character-cost engine, validated
+to **100% parity with the Java reference across 28,593 calculations** (1,000+
+unit tests, 650+ fixtures), with a FastAPI + SvelteKit interface and rulebook RAG
+that answers "what's the actual rule" with page-level citations. Kirby's costing
+core.
 
 ## Experience
 
