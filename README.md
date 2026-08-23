@@ -50,27 +50,27 @@ expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
 
 Old-school-geek side projects, built with the same discipline as everything above.
 
-**Kirby** — *a virtual-tabletop platform for the HERO System* (private, in development)
-A constellation of FastAPI services around Foundry VTT: campaign generation,
-procedural terrain and battle-map generation, a combat assistant where **an LLM
-selects tactical intent but a deterministic engine and seeded, auditable RNG
-resolve every outcome** (the model never invents numbers), AI text/image
-generation routed through the media platform's engine, and its own identity
-provider (self-hosted Authentik). Same governance thesis as everything above —
-AI proposes, a deterministic layer decides — applied to games. The trajectory:
-what began as services around Foundry is growing toward a full virtual-tabletop
-platform in its own right.
+**[Kirby](https://kirbyvtt.org)** — *a virtual tabletop for the HERO System*
+Three published engines and a platform being built on them. The engines are
+source-available and installable today:
+[kirby-cost](https://github.com/pdbethke/kirby-cost) reads a HERO 6E build and
+costs it, validated against Hero Designer on 655 of 655 characters — every
+object and every character total — behind 1,433 tests;
+[kirby-sheet](https://github.com/pdbethke/kirby-sheet) renders a character to
+JSON, plain text, HTML, PDF, or back to `.hdc` byte-for-byte; and
+[kirby-combat](https://github.com/pdbethke/kirby-combat) is a pure-Python HERO
+6E combat engine with zero runtime dependencies and 905 tests, covering
+attacks, grappling, movement, mental combat, vehicles, mass combat,
+destructible terrain and Presence attacks.
 
-**HERO System rules engine** — *a licensed tabletop rules engine, proven to parity*
-A licensed, from-scratch Python implementation of the HERO System 6E
-character-cost rules, built solely as **Kirby's internal costing core — it mirrors
-the system faithfully and is not a competitor to Hero Designer**. Hero Designer is
-the reference implementation it honors: validated to **100% parity across 28,593
-calculations** (1,000+ unit tests, 650+ fixtures) precisely so the VTT resolves
-costs exactly as the official tool does. FastAPI + SvelteKit interface; rulebook
-RAG answers "what's the actual rule" with page-level citations.
+The design constraint is deliberate: Kirby **plays** characters, it does not
+create them. It ships no rules content and will not start without a template
+from the user's own Hero Designer installation — a companion to Hero Designer,
+not a substitute for it. HERO System™ is DOJ, Inc. d/b/a Hero Games'
+trademark; this is an independent work, not affiliated with or endorsed by
+them.
 
-*Apart from corralai, these are private projects — inquiries are welcome.*
+*Apart from corralai and the Kirby engines, these are private projects — inquiries are welcome.*
 
 ## Experience
 
