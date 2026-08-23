@@ -1,119 +1,68 @@
 # Peter D. Bethke
 
-**Full-Stack Software Architect — AI-Agent Systems, Security & Multi-Tenant Platforms**
+**I build backends AI agents can safely operate.**
 
-I build backends that AI agents can **safely operate**, not just call — the governance
-layer that makes AI autonomy shippable. Current work centers on agent-operable
-platforms where every action is schema-validated, permission-checked, dry-run by
-default, and audit-logged: **AI proposes; a deterministic, auditable layer decides.**
+The thread through everything I have done is data translation — taking data that lives in one system’s logic and reshaping it into what another system, or the business, actually needs. I translate at every layer: data between systems, and systems to the people who use them.
 
-Nearly three decades of full-stack engineering spent at the frontier — early
-team-based CMS → enterprise document systems → today's agentic AI and multi-tenant
-security. I went deep on identity and safety because autonomy without guardrails is
-a liability: self-hosted multi-tenant OIDC, deploy-gated pentest suites,
-quarantine-first content pipelines.
+## Open source
 
-I work where business meets engineering — degrees in English and screenwriting
-trained me to turn business problems into systems, and to explain those systems back
-to the people who fund them.
+**[corral](https://github.com/pdbethke/corralai)**
+Corral breaks your code on purpose and checks whether your tests notice. It plants faults that violate a stated guarantee, runs your own suite against each one in a sandbox, and reports how many it killed — measured by execution, never taken on a model’s word.
 
-## Selected work
+**[kirby-cost](https://github.com/pdbethke/kirby-cost)**
+A from-scratch port of the HERO System 6E character build and cost engine, validated to 100% parity with the reference implementation across 656 fixtures, every character exact on every object. Parity is a release gate, not a one-time claim.
 
-**[corralai](https://github.com/pdbethke/corralai)** — *coordinated multi-agent, multi-model* (public, Elastic-2.0)
-An MCP-native brain a herd of coding agents — different models, different harnesses,
-different machines — coordinate, remember, and re-plan through. Transactional
-coordination (SQLite), analytical memory (DuckDB), bwrap-jailed execution, OIDC
-identity, verification gates, and a fully attributed audit trail. It absorbed my
-earlier agentic write-governance platform: five-gate validated writes, dry-run by
-default with before/after diffs, immutable per-call audit, and the multi-agent
-file-claim broker that grew into the corral itself. Watch it live: `make demo-mission`.
+**[sigma-rbac-lab](https://github.com/pdbethke/sigma-rbac-lab)**
+Scoped grants, a multi-tenant read/write boundary, and a scoped agent, all verified against a SQL oracle. Every research lab carries its own VERIFY.md, so a skeptical reader can read the code, run the oracle, and use the live workbook — three things to check, not one to take on faith.
 
-**Multi-Tenant Publishing Platform** — *the SaaS a media business runs on* (private, commercial)
-The complete platform a regional media & publishing business runs on: product and
-listing management, a CMS with inline page and navigation editing, an events
-subsystem with full RFC 5545 recurrence, and a commerce layer — rate cards,
-campaigns, invoicing, accounting sync. A Django/DRF core behind a versioned
-TypeScript SDK (with Svelte components) consumed by a SvelteKit admin and SSR
-public sites; per-tenant branded SSO on self-hosted OIDC (Authentik); semantic +
-vector search; and an agent-governed MCP write surface over the whole schema.
-15+ coordinated repos with a cascading CI/CD pipeline onto self-hosted
-infrastructure. The Media Library below is its media + AI engine.
+**[erd-to-schema](https://github.com/pdbethke/erd-to-schema)**
+What Sigma’s assistant rebuilt from a mermaid ERD image and two prompts, with a SQL oracle that verifies its output. This one tests a tool; sigma-rbac-lab is the system I built myself — worth keeping straight, since they are both RBAC and both live on Sigma Public.
 
-**Media Library** — *AI-native, multi-tenant media platform*
-Full media management (Cloudflare-Worker CDN with on-the-fly resize/AVIF, async video
-pipelines) plus an AI layer: multi-provider generation behind one adapter, an
-MCP/agent research-and-synthesis hub, semantic search. Quarantine-first safety
-through five layers (Safe Browsing → ClamAV → NSFW ML → CSAM hashing → lifecycle
-expiry). Shipped as a reusable SDK + SvelteKit app powering two product lines.
+**[agent-indexing-lab](https://github.com/pdbethke/agent-indexing-lab)**
+The repo backing the article, carrying its own oracle and VERIFY.md so the study’s claims can be checked rather than taken on faith.
 
-### Side projects
+**[sportspicker-core](https://github.com/pdbethke/sportspicker-core)**
+Dependency-free scoring and aggregation for pick’em contests, written to be an audit subject for corral — the guarantee that corral enforces is exactly what corral audits it against. Included precisely because it shows the corral thesis applied to my own code.
 
-Old-school-geek side projects, built with the same discipline as everything above.
+**[thunderbird-mcp](https://github.com/pdbethke/thunderbird-mcp)**
+A fork and contribution: an MCP server exposing Thunderbird mail, calendar, and contacts to agent tooling.
 
-**[Kirby](https://kirbyvtt.org)** — *a virtual tabletop for the HERO System*
-Three published engines and a platform being built on them. The engines are
-source-available and installable today:
-[kirby-cost](https://github.com/pdbethke/kirby-cost) reads a HERO 6E build and
-costs it, validated against Hero Designer on 655 of 655 characters — every
-object and every character total — behind 1,433 tests;
-[kirby-sheet](https://github.com/pdbethke/kirby-sheet) renders a character to
-JSON, plain text, HTML, PDF, or back to `.hdc` byte-for-byte; and
-[kirby-combat](https://github.com/pdbethke/kirby-combat) is a pure-Python HERO
-6E combat engine with zero runtime dependencies and 905 tests, covering
-attacks, grappling, movement, mental combat, vehicles, mass combat,
-destructible terrain and Presence attacks.
 
-The design constraint is deliberate: Kirby **plays** characters, it does not
-create them. It ships no rules content and will not start without a template
-from the user's own Hero Designer installation — a companion to Hero Designer,
-not a substitute for it. HERO System™ is DOJ, Inc. d/b/a Hero Games'
-trademark; this is an independent work, not affiliated with or endorsed by
-them.
+## Platform & product work
 
-*Apart from corralai and the Kirby engines, these are private projects — inquiries are welcome.*
+**ProductBinder / WebOffice** — *private · commercial · in development*
+Product and listing management, a CMS with inline page and navigation editing, an events subsystem with full RFC 5545 recurrence, and a commerce layer covering rate cards, campaigns, invoicing, and accounting sync.
 
-## Experience
+**Media Library**
+A Cloudflare-Worker CDN with on-the-fly resize and AVIF negotiation, async video pipelines, multi-provider AI generation behind one adapter, semantic search, and a quarantine-first safety pipeline: Safe Browsing, then ClamAV, then NSFW ML, then CSAM hashing, then lifecycle expiry.
 
-- **President & Lead Consultant**, SiteShell.net — *2001–present.* Full-stack
-  consultancy; sole architect on most engagements, owning data modeling through
-  deployment, hardening, and years-long maintenance. ~20 years in Python/Django, now
-  focused on AI-agent-operable platforms.
-- **Integration Architect / Lead Software Application Developer**, Randstad USA —
-  *2022–2024.* Multi-region integration architecture for the enterprise R-One
-  platform; enterprise-scale AWS applications; software lead in cross-functional Agile teams.
+**Agent write-governance (MCP)**
+An MCP surface over the production schema: schema-validated, permission-checked, dry-run-by-default with before/after diffs, and an immutable per-call audit trail.
 
-## What clients say
+**[Kirby VTT platform](https://kirbyvtt.org)**
+Campaign generation, procedural maps, and a combat assistant, where a deterministic engine with seeded, auditable RNG resolves every outcome — the same result every time, from the same seed.
 
-> “Peter and I have been working together for many years, from when my company had
-> a revenue stream of less than \$10 million. Needless to say, we couldn't afford
-> an IT department, much less a full-time programmer or consultant. I don't
-> remember how we met, but he was a godsend. Peter, with his innate intelligence
-> and deep knowledge of technology, was able to clearly understand our business
-> needs, translate them into the technological equivalent and deliver the results
-> that allowed us to grow to over \$100 million in revenue. We eventually formed
-> an IT department, but whenever we had business challenges that (we suspected)
-> had a technological solution, he was the first and only person we would call.
-> To summarize: highly intelligent, speaks tech to the tech people and translates
-> to the business people, able to understand business processes and convert them
-> to tech solutions, very hands-on and always answers a call — all great traits
-> we've appreciated in our business relationship.”
->
-> — **Rossi Bonugli**, co-founder, Cella, Inc. (now part of Randstad US Technologies Group)
+**Self-hosted identity**
+Per-tenant branded OIDC/SSO, run as two independent Authentik deployments serving the two product lines separately.
 
-> “I had the pleasure of working with Peter over the course of many years on
-> several high-impact projects. Peter is extremely professional, collaborative
-> and a partner in the truest sense of the word. Peter cared very much about the
-> success of our business. I highly recommend Peter and wouldn't hesitate to work
-> with him again in the future.”
->
-> — **Conor Smith**, former co-CEO, Cella, Inc. (now part of Randstad US Technologies Group)
+**[Cella](https://cellainc.com)**
+Cella could not afford an IT department. I was the whole function, through the company’s growth from under $10M to over $100M in revenue. The substance of the engagement was an enterprise-scale staffing application with extensive third-party integrations and custom APIs, later architected and maintained on AWS — the public website was its visible surface, not its subject.
 
-## Education & affiliations
+**R-One integration architecture** — *Randstad USA · 2023–2024*
+As integration architect I built the server that abstracted multiple US source systems behind a common layer and streamed them, via Google Pub/Sub, into the Netherlands-based R-One platform’s data warehouse. Cross-border data harmonisation, owned from concept through initial build.
 
-M.A. Screenwriting, USC · B.A. English, Middlebury College ·
-Partner at Divio (DjangoCMS); DjangoCMS Association member ·
-First Dan Black Belt, Jidokwan Taekwondo 🥋
+**Product-data transformation for a specialty-chemicals manufacturer**
+A product-data transformation API feeding a compliance-document system: it navigates JD Edwards’ opaque, denormalized schema and produces clean, correctly-shaped datasets for the downstream application that generates the compliance documents.
+
+
+## Featured
+
+**[Ask Charles](https://public.sigmacomputing.com/view-workbook?workbook=50pa3zNuDCZnhaMU1aFdy5)**
+A data-center site selector that ranks all 3,144 U.S. counties on the factors that decide a site, with a grounded advisor that re-reasons as the priorities change.
+
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/peter-d-bethke-07b26b) · pdbethke@siteshell.net
+[LinkedIn](https://www.linkedin.com/in/peter-d-bethke-07b26b/) · pdbethke@siteshell.net · [peterdbethke.com](https://peterdbethke.com)
+
+<!-- Generated from peterdbethke.com. Edit the site, not this file. -->
