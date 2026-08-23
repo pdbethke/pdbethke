@@ -116,4 +116,4 @@ First Dan Black Belt, Jidokwan Taekwondo 🥋
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/peter-d-bethke-07b26b) · pdbethke@gmail.com
+[LinkedIn](https://www.linkedin.com/in/peter-d-bethke-07b26b) · pdbethke@siteshell.net
