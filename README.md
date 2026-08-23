@@ -24,9 +24,6 @@ The repo backing the article, carrying its own oracle and VERIFY.md so the study
 **[sportspicker-core](https://github.com/pdbethke/sportspicker-core)**
 Dependency-free scoring and aggregation for pick’em contests, written to be an audit subject for corral — the guarantee that corral enforces is exactly what corral audits it against. Included precisely because it shows the corral thesis applied to my own code.
 
-**[thunderbird-mcp](https://github.com/pdbethke/thunderbird-mcp)**
-A fork and contribution: an MCP server exposing Thunderbird mail, calendar, and contacts to agent tooling.
-
 
 ## Platform & product work
 
